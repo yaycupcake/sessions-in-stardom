@@ -1,4 +1,48 @@
+body {
+	font-size: 18px;
+}
+
 header {
 	background-image: url(Sessions_Header.png);
 	background-size: cover;
+	padding: 5em;
+	width: 100vw;
+	height: 33vw;
+}
+
+h1 {
+	font-size: 3em;
+}
+
+nav {
+	background-color: #92FC4E;
+	padding: .5em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+nav li {
+	display: inline-block;
+	padding: .5em 1em;
+	font-size: 2em;
+}
+
+nav a {
+	text-decoration: none;
+	color: inherit;
+}
+
+nav a:hover {
+	text-decoration: underline;
+}
+
+
+
+footer {
+	background-color: #AA2CF9;
+	padding: 1em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
