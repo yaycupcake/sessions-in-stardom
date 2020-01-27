@@ -1,14 +1,13 @@
 body {
 	font-size: 24px;
 	font-family: Vollkorn, serif;
-	/*width: 100vw;*/
+	
 }
 
 header {
 	background-image: url(Sessions_Header.png);
 	background-size: cover;
-	padding: 5em;
-	/*width: 100%;*/
+	background-position: center;
 	height: 33vw;
 }
 
@@ -52,7 +51,8 @@ main {
 }
 
 main > p {
-	margin-bottom: 1em;
+	margin: 0 auto 1em auto;
+	max-width: 1000px;
 }
 
 main > p:last-child {
@@ -67,9 +67,38 @@ footer {
 	justify-content: center;
 	align-items: center;
 	font-size: .75em;
+	text-align: center;
 }
 
 
+@media screen and (max-width: 720px) {
+	
+}
+
+
+@media screen and (max-width: 960px) {
+	nav {
+		padding: .5em .25em;
+	}
+	nav li {
+		font-size: 1em;
+		padding: .25em .5em .25em;
+	}
+	main {
+		padding: 1.5em 2em;
+		font-size: .75em;
+	}
+	footer {
+		font-size: .6em;
+	}
+}
+
+
+
+
+@media screen and (min-width: 1281px) {
+	
+}
 
 
 
