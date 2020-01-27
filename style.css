@@ -84,7 +84,9 @@ footer {
 	align-items: center;
 	text-align: center;
 	font-size: .6em;
+	color: #ffb3d0;
 }
+
 
 @media screen and (min-width: 421px) {
 	main > h1 {
