@@ -1,15 +1,17 @@
 const users = [
 {
 name: "Okkefak",
-imageUrl: "https://pbs.twimg.com/profile_images/1176581789936230400/UiO4onXv_400x400.jpg",
+imageUrl: "images/okkefak.png",
 profileUrl: "https://twitter.com/Okkefak",
-role: "Mod"
+role: "Head Mod, Artist",
+blurb: "Hello! My name is Okke, and I am the head mod for this zine. I have loved TMS since the very first trailer, and have been excited to make this zine for a long time now! I am a fanartist, mostly for the Fire Emblem series, and have ran two Fire Emblem charity zines successfully in the past. TMS is a game very close to my heart, and I can't wait to see what amazing content everyone produces for it! ♥"
 },
 {
 name: "EvernightStudio",
-imageUrl: "https://pbs.twimg.com/profile_images/1219031548273446912/-DgcLHuW_400x400.jpg",
+imageUrl: "images/evernightstudio.png",
 profileUrl: "https://twitter.com/EvernightStudio",
-role: "Mod"
+role: "Head Mod, Lead Graphic Designer, Writer",
+blurb: "Hey there everyone! I go by Night and am the lead graphic designer for Sessions in Stardom. I run Evernight Studio, which makes a plethora of banners, mobile backgrounds, and other graphics on games like Smash Bros and Persona. As a fan of both Fire Emblem and the Shin Megami Tensei series, I was so excited to play Tokyo Mirage Sessions from the day it was teased. Glad to be here, and I hope you enjoy the show!"
 }
 ]
 
@@ -19,7 +21,8 @@ const contributors = document.querySelector('.contributors');
 for (let i = 0; i < users.length; i++) {
 	let user = users[i];
 
-	let userBox = document.createElement('div');
+	let userBox = document.createElement('section');
+	userBox.classList.add('userbox');
 
 	let nameNode = document.createElement('span');
 	nameNode.classList.add('name');
@@ -39,9 +42,16 @@ for (let i = 0; i < users.length; i++) {
 	roleNode.classList.add('role');
 	roleNode.textContent = user.role;
 
+	let blurbNode = document.createElement('p');
+	blurbNode.classList.add('blurb');
+	blurbNode.textContent = user.blurb;
+
 	userBox.appendChild(nameNode);
 	userBox.appendChild(pfpNode);
 	userBox.appendChild(roleNode);
+	userBox.appendChild(blurbNode);
+
+
 
 	contributors.appendChild(userBox);
 }

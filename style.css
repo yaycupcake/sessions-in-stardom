@@ -31,13 +31,13 @@ nav li {
 	display: inline-block;
 	font-size: 1em;
 	padding: .25em .5em .25em;
+	position: relative;
 }
 
 	nav a {
 	text-decoration: none;
 	color: inherit;
 }
-
 
 
 nav a:hover {
@@ -47,6 +47,18 @@ nav a:hover {
 
 nav a:active {
 	animation: text-blur-out 0.05s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+nav a[href="#"]:hover {
+	cursor: not-allowed;
+}
+
+nav a[href="#"]:hover:before {
+	content: "Coming Soon!";
+	position: absolute;
+	font-size: 50%;
+	background-color: #FAEFA1;
+	padding: .5em 1em;
 }
 
 main {
@@ -70,10 +82,17 @@ main > h2 {
 main > p {
 	margin: 0 auto 1em auto;
 	max-width: 1000px;
+	line-height: 1.2em;
 }
 
 main > p:last-child {
 	margin-bottom: 0;
+}
+
+main > h3 {
+	font-size: 1.2em;
+	font-weight: bold;
+	margin-bottom: 1em;
 }
 
 footer {
@@ -87,6 +106,54 @@ footer {
 	color: #ffb3d0;
 }
 
+.userbox {
+	display: grid;
+	grid-template-areas: 
+		"pfp"
+		"name"
+		"role"
+		"blurb"
+	;
+	margin-bottom: 1em;
+}
+
+.name {
+	font-size: 1.5em;
+	display: block;
+	grid-area: name;
+	margin-bottom: .1em;
+	font-weight: bold;
+}
+
+.name a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.role {
+	font-size: 1.2em;
+	display: block;
+	grid-area: role;
+	margin-bottom: .5em;
+}
+
+.pfp {
+	grid-area: pfp;
+	margin-bottom: .5em;
+
+}
+
+.pfp img {
+	max-width: 100%;
+	height: auto;
+	border-radius: 50%;
+}
+
+.blurb {
+	line-height: 1.2em;
+	grid-area: blurb;
+}
+
 
 @media screen and (min-width: 421px) {
 	main > h1 {
@@ -97,6 +164,10 @@ footer {
 		font-size: 1.5em;
 		margin: 0 auto .5em auto;
 	}
+}
+
+.pfp img {
+	width: 250px;
 }
 
 
