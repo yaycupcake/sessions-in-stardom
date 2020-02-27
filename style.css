@@ -164,10 +164,22 @@ footer {
 		font-size: 1.5em;
 		margin: 0 auto .5em auto;
 	}
-}
 
-.pfp img {
-	width: 250px;
+	.userbox {
+		grid-template-areas: 
+			"pfp ."
+			"pfp name"
+			"pfp role"
+			"pfp ."
+			"blurb blurb"
+		;
+		grid-gap: 1em;
+	}
+
+	.pfp {
+		width: 125px;
+	}
+
 }
 
 
@@ -189,7 +201,13 @@ footer {
 	footer {
 		font-size: .75em;
 	}
+	
+	.pfp {
+		width: 250px;
+	}
+
 }
+
 
 
 @media screen and (min-width: 1281px) {

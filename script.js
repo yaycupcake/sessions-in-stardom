@@ -12,6 +12,20 @@ imageUrl: "images/evernightstudio.png",
 profileUrl: "https://twitter.com/EvernightStudio",
 role: "Head Mod, Lead Graphic Designer, Writer",
 blurb: "Hey there everyone! I go by Night and am the lead graphic designer for Sessions in Stardom. I run Evernight Studio, which makes a plethora of banners, mobile backgrounds, and other graphics on games like Smash Bros and Persona. As a fan of both Fire Emblem and the Shin Megami Tensei series, I was so excited to play Tokyo Mirage Sessions from the day it was teased. Glad to be here, and I hope you enjoy the show!"
+},
+{
+name: "springexalt",
+imageUrl: "images/springexalt.png",
+profileUrl: "https://twitter.com/springexalt",
+role: "Guest Artist",
+blurb: "hi my name is robin!! i've been drawing for 10+ years now! i'm SUPER excited to work on this zine withi everyone, i've adored tokyo mirage sessions since it first came ^o^)/ <3"
+},
+{
+name: "_JamesFE",
+imageUrl: "images/_JamesFE.png",
+profileUrl: "https://twitter.com/_JamesFE",
+role: "Guest Artist",
+blurb: "Hello everyone!! I'm very excited to take part in this project.I love TMS a lot and I would like to take this opportunity to spread my passion for it with others!'"
 }
 ]
 
