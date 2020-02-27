@@ -22,7 +22,7 @@ blurb: "hi my name is robin!! i've been drawing for 10+ years now! i'm SUPER exc
 },
 {
 name: "_JamesFE",
-imageUrl: "images/_JamesFE.png",
+imageUrl: "images/JamesFE.png",
 profileUrl: "https://twitter.com/_JamesFE",
 role: "Guest Artist",
 blurb: "Hello everyone!! I'm very excited to take part in this project.I love TMS a lot and I would like to take this opportunity to spread my passion for it with others!'"
