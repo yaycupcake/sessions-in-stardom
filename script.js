@@ -26,6 +26,13 @@ imageUrl: "images/JamesFE.png",
 profileUrl: "https://twitter.com/_JamesFE",
 role: "Guest Artist",
 blurb: "Hello everyone!! I'm very excited to take part in this project.I love TMS a lot and I would like to take this opportunity to spread my passion for it with others!'"
+},
+{
+name: "TheKimersonShow",
+imageUrl: "images/TheKimersonShow.png",
+profileUrl: "https://twitter.com/TheKimersonShow",
+role: "Guest Artist",
+blurb: "I love Tokyo Mirage Sessions #FE with all of my heart, so I am incredibly honored to be a part of a zine that celebrates this wonderful game!"
 }
 ]
 
