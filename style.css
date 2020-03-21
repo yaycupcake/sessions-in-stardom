@@ -40,12 +40,14 @@ nav li {
 }
 
 
-nav a:hover {
+/*nav a:hover {*/
+a:hover {
 	/*text-decoration: underline;*/
 	animation: text-shadow-drop-center 0.6s both;
 }
 
-nav a:active {
+/*nav a:active {*/
+a:active {
 	animation: text-blur-out 0.05s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
 
@@ -106,6 +108,17 @@ footer {
 	color: #ffb3d0;
 }
 
+footer a {
+	color: inherit;
+}
+
+.contributors {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+
 .userbox {
 	display: grid;
 	grid-template-areas: 
@@ -115,6 +128,15 @@ footer {
 		"blurb"
 	;
 	margin-bottom: 1em;
+	padding: 1em;
+}
+
+.userbox:nth-of-type(odd) {
+	background-color: rgba(255,200,200,.1);
+}
+
+.userbox:nth-of-type(even) {
+	background-color: rgba(200,255,200,.1);
 }
 
 .name {
@@ -138,13 +160,14 @@ footer {
 }
 
 .pfp {
+	max-width: 100%;
 	grid-area: pfp;
 	margin-bottom: .5em;
 
 }
 
 .pfp img {
-	max-width: 100%;
+	width: 100%;
 	height: auto;
 	border-radius: 50%;
 }
@@ -173,17 +196,31 @@ footer {
 			"pfp ."
 			"blurb blurb"
 		;
+		grid-template-columns: 1fr 3fr;
 		grid-gap: 1em;
+		width: 100%;
+	}
+
+	.name, .role {
+		width: 100%;
+		text-align: left;
+		margin-right: 2em;
+		margin-left: 2rem;
 	}
 
 	.pfp {
 		width: 125px;
 	}
 
+	.pfp > img {
+		width: 125px;
+	}
+
 }
 
 
-@media screen and (min-width: 961px) {
+/*@media screen and (min-width: 961px) {*/
+@media screen and (min-width: 921px) {
 	nav {
 		padding: .5em;
 	}
@@ -201,8 +238,17 @@ footer {
 	footer {
 		font-size: .75em;
 	}
+
+	.userbox {
+		grid-template-columns: 250px | auto;
+		max-width: 48em;
+	}
 	
 	.pfp {
+		width: 250px;
+	}
+
+	.pfp > img {
 		width: 250px;
 	}
 
@@ -210,8 +256,35 @@ footer {
 
 
 
-@media screen and (min-width: 1281px) {
-	
+/*@media screen and (min-width: 1281px) {*/
+@media screen and (min-width: 1201px) {
+	h1, h2, h3 {
+		text-align: center;
+	}
+}
+
+@media screen and (min-width: 1651px) {
+	.contributors {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: stretch;
+		align-content: flex-start;
+	}
+
+	.userbox {
+		width: 28em;
+	}
+
+	.userbox:nth-of-type(odd) {
+		margin-right: 0.5em;
+	}
+
+	.userbox:nth-of-type(even) {
+		margin-left: 0.5em;
+	}
+
 }
 
 /* ----------------------------------------------

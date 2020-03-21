@@ -33,6 +33,175 @@ imageUrl: "images/TheKimersonShow.png",
 profileUrl: "https://twitter.com/TheKimersonShow",
 role: "Guest Artist",
 blurb: "I love Tokyo Mirage Sessions #FE with all of my heart, so I am incredibly honored to be a part of a zine that celebrates this wonderful game!"
+},
+{
+	name: "ciarre",
+	imageUrl: "images/ciarre.png",
+	profileUrl: "https://twitter.com/ciarre_arts",
+	role: "Cover Artist"
+},
+{
+	name: "GrimLuminary",
+	imageUrl: "images/GrimLuminary.png",
+	profileUrl: "https://twitter.com/GrimLuminary",
+	role: "Artist"
+},
+{
+	name: "Jihae",
+	imageUrl: "images/Jihae.png",
+	profileUrl: "https://twitter.com/ajihaew",
+	role: "Artist"
+},
+{
+	name: "Kuma",
+	imageUrl: "images/Kuma.png",
+	profileUrl: "https://twitter.com/Kumaokaasan",
+	role: "Artist"
+},
+{
+	name: "Shunkaku",
+	imageUrl: "images/Shunkaku.png",
+	profileUrl: "https://twitter.com/Shunkaku",
+	role: "Artist"
+},
+{
+	name: "Ihsnet",
+	imageUrl: "images/Ihsnet.png",
+	profileUrl: "https://twitter.com/Ihsnet",
+	role: "Artist"
+},
+{
+	name: "Hatsune Lizzu",
+	imageUrl: "images/HatsuneLizzu.png",
+	profileUrl: "https://twitter.com/hatsunelizzu",
+	role: "Artist"
+},
+{
+	name: "Star",
+	imageUrl: "images/Star.png",
+	profileUrl: "https://twitter.com/Stardastarly",
+	role: "Artist"
+},
+{
+	name: "CKR the Cat",
+	imageUrl: "images/CKRtheCat.png",
+	profileUrl: "https://twitter.com/CKRtheCat",
+	role: "Artist"
+},
+{
+	name: "Loustica_Lucia",
+	imageUrl: "images/Loustica_Lucia.png",
+	profileUrl: "https://twitter.com/Loustica_Lucia",
+	role: "Artist"
+},
+{
+	name: "reidiantdawn",
+	imageUrl: "images/reidiantdawn.png",
+	profileUrl: "https://twitter.com/reidiantdawn",
+	role: "Artist"
+},
+{
+	name: "Rubin",
+	imageUrl: "images/Rubin.png",
+	profileUrl: "https://twitter.com/rubindraws",
+	role: "Artist"
+},
+{
+	name: "janarowe",
+	imageUrl: "images/janarowe.png",
+	profileUrl: "https://twitter.com/janarowe_",
+	role: "Artist"
+},
+{
+	name: "lemonbo0y",
+	imageUrl: "images/lemonbo0y.png",
+	profileUrl: "https://twitter.com/Lemonbo0y",
+	role: "Artist"
+},
+{
+	name: "Erin Tate",
+	imageUrl: "images/ErinTate.png",
+	profileUrl: "https://twitter.com/ErinTatertots",
+	role: "Artist"
+},
+{
+	name: "yitsuin",
+	imageUrl: "images/yitsuin.png",
+	profileUrl: "https://twitter.com/yitsuin",
+	role: "Artist"
+},
+{
+	name: "Cecil",
+	imageUrl: "images/Cecil.png",
+	profileUrl: "https://twitter.com/SubomieArt",
+	role: "Artist"
+},
+{
+	name: "Saaron",
+	imageUrl: "images/Saaron.png",
+	profileUrl: "https://twitter.com/saaronwrites",
+	role: "Writer"
+},
+{
+	name: "Mars",
+	imageUrl: "images/Mars.png",
+	profileUrl: "https://twitter.com/Marsversusmars",
+	role: "Writer"
+},
+{
+	name: "Echo",
+	imageUrl: "images/Echo.png",
+	profileUrl: "https://twitter.com/PASSlONLlP",
+	role: "Writer"
+},
+{
+	name: "Ailanthium",
+	imageUrl: "images/Ailanthium.png",
+	profileUrl: "https://twitter.com/Ailanthium",
+	role: "Writer"
+},
+{
+	name: "Mayura",
+	imageUrl: "images/Mayura.png",
+	profileUrl: "https://twitter.com/DaylitWriter",
+	role: "Writer"
+},
+{
+	name: "PsiYoshi",
+	imageUrl: "images/PsiYoshi.png",
+	profileUrl: "https://twitter.com/PsiYoshi",
+	role: "Writer"
+},
+{
+	name: "Lizlow",
+	imageUrl: "images/Lizlow.png",
+	profileUrl: "https://twitter.com/roastedlizlow",
+	role: "Writer"
+},
+{
+	name: "pasu",
+	imageUrl: "images/pasu.png",
+	profileUrl: "https://twitter.com/VH_Remilia",
+	role: "Merch Artist"
+},
+{
+	name: "masterhands",
+	imageUrl: "images/masterhands.png",
+	profileUrl: "https://twitter.com/master_hands",
+	role: "Merch Artist"
+},
+{
+	name: "Himeko",
+	imageUrl: "images/Himeko.png",
+	profileUrl: "https://twitter.com/yukimori_himeko",
+	role: "Merch Artist"
+},
+{
+	name: "Sei",
+	imageUrl: "images/Sei.png",
+	profileUrl: "https://twitter.com/XinChun93",
+	role: "Web Developer",
+	blurb: "I just made this site. Everyone else did the hard work."
 }
 ]
 
@@ -63,15 +232,19 @@ for (let i = 0; i < users.length; i++) {
 	roleNode.classList.add('role');
 	roleNode.textContent = user.role;
 
-	let blurbNode = document.createElement('p');
-	blurbNode.classList.add('blurb');
-	blurbNode.textContent = user.blurb;
+
 
 	userBox.appendChild(nameNode);
 	userBox.appendChild(pfpNode);
 	userBox.appendChild(roleNode);
-	userBox.appendChild(blurbNode);
 
+	if (user.blurb) {
+		let blurbNode = document.createElement('p');
+		blurbNode.classList.add('blurb');
+		blurbNode.textContent = user.blurb;
+
+		userBox.appendChild(blurbNode);
+	}
 
 
 	contributors.appendChild(userBox);
